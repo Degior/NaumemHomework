@@ -5,8 +5,8 @@ import java.util.List;
 
 public class App {
     public static void main(String[] args) {
-        ArrayList<User> users = (ArrayList<User>) createUsers(100000, 0);
-        ArrayList<User> users2 = (ArrayList<User>) createUsers(10000, 14322);
+        List<User> users = createUsers(100000, 0);
+        List<User> users2 = createUsers(10000, 14322);
         List<User> duplicates = User.findDuplicates(users, users2);
         System.out.println(duplicates);
     }
