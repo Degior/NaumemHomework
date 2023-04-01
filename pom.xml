@@ -5,6 +5,10 @@
     <groupId>org.example</groupId>
     <artifactId>NaumenHomework</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>hw4task1</module>
+        <module>hw4task2</module>
+    </modules>
     <packaging>pom</packaging>
 
     <name>NaumenHomework</name>
@@ -14,15 +18,14 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <junit.version>4.13.2</junit.version>
+        <comons-io.version>2.11.0</comons-io.version>
     </properties>
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-                <scope>test</scope>
-                <version>${junit.version}</version>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${comons-io.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
